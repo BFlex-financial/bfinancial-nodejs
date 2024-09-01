@@ -1,6 +1,11 @@
 > [!WARNING]
 > Se pretende trabalhar com linguagens de alto nível (Js ou Ts), recomendamos fortemente a lib de [TypeScript](https://github.com/BFlex-financial/bfinancial-ts) para outro runtime fora o Node.js. Como, Bun, ou Deno.
 
+
+```bash-session
+$ npm i bfinancial-nodejs
+```
+
 ```js
 const client = new Client().login("admin");
 const payment = client.payments;

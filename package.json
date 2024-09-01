@@ -1,6 +1,6 @@
 {
-  "name": "bfinancial-node",
-  "version": "0.0.1",
+  "name": "bfinancial-nodejs",
+  "version": "0.0.2",
   "module": "index.js",
   "type": "module",
   "devDependencies": {
