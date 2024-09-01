@@ -33,7 +33,7 @@ class Payment {
       });
 
       const response = await request.json();
-      (data.status == 200 ? resolve : reject)(response.data);
+      (data.code == 200 ? resolve : reject)(response.data);
     });
   }
 }
