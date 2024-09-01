@@ -17,6 +17,7 @@ class Client {
 class Payment {
   constructor(api_key) {
     this.__api_url = "http://127.0.0.1:8080";
+    this.__prefix = 'Bearer ';
     this.__api_key = api_key;
   }
 
@@ -26,7 +27,7 @@ class Payment {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization-key": this.__api_key
+          "Authorization-key": this.__prefix + this.__api_key
         },
         body: JSON.stringify(payment_data)
       });
