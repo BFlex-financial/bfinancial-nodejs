@@ -59,7 +59,7 @@ class Transaction {
 
       amount: data.amount,
       cvv: data.cvv,
-      number: daat.number,
+      number: data.number,
       
       payer_cpf: data.payer_cpf,
       payer_email: data.payer_email,
