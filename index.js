@@ -10,7 +10,7 @@ class Client {
    * @returns {object} PaymentInterface type
    */
   login(api_key) {
-    return { payments: Payment(api_key) };
+    return { payments: new Payment(api_key) };
   }
 }
 
@@ -33,7 +33,8 @@ class Payment {
       });
 
       const response = await request.json();
-      (data.code == 200 ? resolve : reject)(response.data);
+
+      (response.code == 200 ? resolve : reject)(response.data);
     });
   }
 }
